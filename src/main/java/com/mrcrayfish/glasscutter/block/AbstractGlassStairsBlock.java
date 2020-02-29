@@ -26,7 +26,6 @@ public class AbstractGlassStairsBlock extends StairsBlock
         this.state = state;
     }
 
-    @Override
     public boolean isTransparent(BlockState state)
     {
         return true;
@@ -50,7 +49,6 @@ public class AbstractGlassStairsBlock extends StairsBlock
         return super.isSideInvisible(state, adjacentState, side);
     }
 
-    @Override
     @OnlyIn(Dist.CLIENT)
     public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos)
     {

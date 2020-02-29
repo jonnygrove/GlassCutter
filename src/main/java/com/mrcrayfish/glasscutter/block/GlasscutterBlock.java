@@ -45,13 +45,14 @@ public class GlasscutterBlock extends Block
     }
 
     @Override
-    public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity playerEntity, Hand hand, BlockRayTraceResult result)
+    public boolean onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity playerEntity, Hand hand, BlockRayTraceResult result)
     {
         if(!world.isRemote)
         {
             playerEntity.openContainer(state.getContainer(world, pos));
         }
-        return ActionResultType.SUCCESS;
+        //return ActionResultType.SUCCESS;
+        return true;
     }
 
     @Nullable
@@ -69,7 +70,6 @@ public class GlasscutterBlock extends Block
         return SHAPE;
     }
 
-    @Override
     public boolean isTransparent(BlockState state)
     {
         return true;

@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[24,)"
 
 issueTrackerURL="https://github.com/MrCrayfish/GlassCutter/issues"
 
@@ -14,15 +14,15 @@ credits="@DarkestArgentum on Twitter for ideas"
 authors="MrCrayfish"
 description='Adds a glasscutter to cut different shapes with glass'
 
-[[dependencies.improvedwolves]]
+[[dependencies.glasscutter]]
     modId="forge"
     mandatory=true
-    versionRange="[31,)"
+    versionRange="[24,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.improvedwolves]]
+[[dependencies.glasscutter]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2,1.16)"
+    versionRange="[1.4.4,1.16)"
     ordering="NONE"
     side="BOTH"

@@ -1,6 +1,7 @@
 package com.mrcrayfish.glasscutter.client.gui.screen.inventory;
 
-import com.mojang.blaze3d.systems.RenderSystem;
+//import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.renderer.RenderHelper;
 import com.mrcrayfish.glasscutter.Reference;
 import com.mrcrayfish.glasscutter.inventory.container.GlasscutterContainer;
 import com.mrcrayfish.glasscutter.item.crafting.GlasscuttingRecipe;
@@ -53,7 +54,7 @@ public class GlasscutterScreen extends ContainerScreen<GlasscutterContainer>
     protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY)
     {
         this.renderBackground();
-        RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+        //RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
         this.minecraft.getTextureManager().bindTexture(BACKGROUND_TEXTURE);
         int guiLeft = this.guiLeft;
         int guiTop = this.guiTop;

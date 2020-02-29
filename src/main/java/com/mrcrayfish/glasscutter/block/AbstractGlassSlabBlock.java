@@ -24,7 +24,6 @@ public class AbstractGlassSlabBlock extends SlabBlock
         this.state = state;
     }
 
-    @Override
     public boolean isTransparent(BlockState state)
     {
         return true;
@@ -37,7 +36,6 @@ public class AbstractGlassSlabBlock extends SlabBlock
         return (adjacentState.getBlock() == this && adjacentState.get(TYPE) == state.get(TYPE)) || adjacentState.getBlock() == this.state.get().getBlock() || super.isSideInvisible(state, adjacentState, side);
     }
 
-    @Override
     @OnlyIn(Dist.CLIENT)
     public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos)
     {
